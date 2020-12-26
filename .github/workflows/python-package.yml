@@ -37,6 +37,6 @@ jobs:
     - name: Test with sample
       run: |
         ./fridge \
-        __TESTS__/[BRDX17021]-Glass-Fearsound-ft-Headblaze.mp3 \
+        __TESTS__/\[BRDX17021\]-Glass-Fearsound-ft-Headblaze.mp3 \
         __TESTS__/BRDX17021.png \
         __TESTS__/BRDX17021.mp4
