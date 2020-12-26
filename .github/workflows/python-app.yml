@@ -40,8 +40,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     - name: Test with pytest and try a test run with BRDX17021 materials
       run: |
-        pytest
-        python ./fridge \
+        ./fridge \
             ./__TESTS__/\[BRDX17021\]-Glass-Fearsound-ft-Headblaze.mp3 \
             ./__TESTS__/BRDX17021.png \
             ./__TESTS__/BRDX17021.mp4
