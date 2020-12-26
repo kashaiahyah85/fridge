@@ -5,14 +5,23 @@ name: Testing
 
 on:
   push:
-    branches: [ fix-*, feature-*, staging-*, beta-* ]
+    branches:
+    - fix-*
+    - feature-*
+    - staging-*
+    - beta-*
   pull_request:
-    branches: [ master ]
+    branches: 
+    - master
+    - release/*
 
 jobs:
   build:
 
-    runs-on: [ ubuntu-latest , macos-10.13 , macos-latest , windows-latest ]
+    runs-on:
+    - ubuntu-16.04
+    - windows-2019
+    - macos-10.15
 
     steps:
     - uses: actions/checkout@v2
